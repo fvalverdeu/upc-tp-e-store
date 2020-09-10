@@ -1,0 +1,24 @@
+<mat-toolbar color="primary" class="header">
+  <h2 class="logo">
+    <img src="assets/img/logo_min.png" alt="IdStore" class="logo">
+  </h2>
+  <span class="logo">ID Store</span>
+  <div class="menu">
+    <button mat-button>Inicio</button>
+    <button mat-button [matMenuTriggerFor]="productsMenu">Productos</button>
+    <mat-menu #productsMenu="matMenu" yPosition="below">
+      <button mat-menu-item>Mascarillas</button>
+      <button mat-menu-item>Protectores Faciales</button>
+      <button mat-menu-item>Oxímetros</button>
+      <button mat-menu-item>Termómetros</button>
+    </mat-menu>
+    <button mat-button>Nosotros</button>
+    <button mat-button [matMenuTriggerFor]="contactMenu">Contacto</button>
+    <mat-menu #contactMenu="matMenu" yPosition="below">
+      <button mat-menu-item>Cliente</button>
+      <button mat-menu-item (click)="login()">Administrador</button>
+    </mat-menu>
+  </div>
+  <div *ngIf="isLogin">Fernando Valverde</div>
+</mat-toolbar>
+<!-- <p>header works!!!!!!</p> -->

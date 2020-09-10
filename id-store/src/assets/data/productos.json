@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "sku": "P001",
+    "name": "Mascarilla 01",
+    "description": "Mascarilla KN95 color blanco",
+    "idCategoria": 1,
+    "precioUnitario": 12,
+    "stock": 100,
+    "img": "mascarilla/mascarilla-01"
+  },
+  {
+    "id": 2,
+    "sku": "P002",
+    "name": "Mascarilla 02",
+    "description": "Mascarilla KN95 color blanco",
+    "idCategoria": 1,
+    "precioUnitario": 12,
+    "stock": 100,
+    "img": "mascarilla/mascarilla-02"
+  },
+  {
+    "id": 3,
+    "sku": "P003",
+    "name": "Mascarilla 03",
+    "description": "Mascarilla KN95 color blanco",
+    "idCategoria": 1,
+    "precioUnitario": 12,
+    "stock": 100,
+    "img": "mascarilla/mascarilla-03"
+  },
+  {
+    "id": 4,
+    "sku": "P004",
+    "name": "Mascarilla 04",
+    "description": "Mascarilla KN95 color blanco",
+    "idCategoria": 1,
+    "precioUnitario": 12,
+    "stock": 100,
+    "img": "mascarilla/mascarilla-04"
+  },
+  {
+    "id": 5,
+    "sku": "P005",
+    "name": "Mascarilla 05",
+    "description": "Mascarilla KN95 color blanco",
+    "idCategoria": 1,
+    "precioUnitario": 12,
+    "stock": 100,
+    "img": "mascarilla/mascarilla-05"
+  },
+  {
+    "id": 6,
+    "sku": "P006",
+    "name": "Mascarilla 06",
+    "description": "Mascarilla KN95 color blanco",
+    "idCategoria": 1,
+    "precioUnitario": 12,
+    "stock": 100,
+    "img": "mascarilla/mascarilla-06"
+  }
+]

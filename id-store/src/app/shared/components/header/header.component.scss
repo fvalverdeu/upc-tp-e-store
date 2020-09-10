@@ -1,0 +1,15 @@
+.header {
+  height: 90px;
+}
+
+h2.logo {
+  width: 100px;
+  img {
+    max-width: 80px;
+    border-radius: 10%;
+  }
+
+ :host .menu {
+    float: right;
+  }
+}
