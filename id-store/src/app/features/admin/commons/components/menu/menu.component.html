@@ -1,0 +1,13 @@
+<div class="header">
+  <img src="assets/img/person.jpg" alt="">
+  <h2>Fernando Valverde</h2>
+</div>
+
+<mat-nav-list>
+  <ng-container *ngFor="let option of menuOptions">
+    <mat-list-item [routerLink]="option.url" routerLinkActive="active">
+      <mat-icon mat-list-icon>{{ option.icon }}</mat-icon>
+      {{ option.title }}
+    </mat-list-item>
+  </ng-container>
+</mat-nav-list>

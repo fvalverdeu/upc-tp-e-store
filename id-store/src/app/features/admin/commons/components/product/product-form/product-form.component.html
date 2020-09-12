@@ -1,0 +1,42 @@
+<form [formGroup]="form" (ngSubmit)="send()">
+
+  <mat-form-field appearance="outline">
+    <mat-label>Nombre</mat-label>
+    <input formControlName="name" matInput>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Código</mat-label>
+    <textarea formControlName="code" matInput></textarea>
+  </mat-form-field>
+
+
+  <mat-form-field appearance="outline">
+    <mat-label>Descripción</mat-label>
+    <input formControlName="description" matInput>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Precio</mat-label>
+    <textarea formControlName="price" matInput></textarea>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Stock</mat-label>
+    <textarea formControlName="stock" matInput></textarea>
+  </mat-form-field>
+
+
+  <mat-form-field appearance="outline">
+    <mat-label>Fabricante</mat-label>
+    <mat-select formControlName="maker">
+      <mat-option *ngFor="let maker of makers" [value]="maker.id" >{{ maker.name }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div>
+    <button mat-button type="button" color="warn" (click)="cancel.emit()" >Cancelar</button>
+    <button mat-button type="submit" color="primary">Guardar</button>
+  </div>
+
+</form>

@@ -1,24 +1,27 @@
-<mat-toolbar color="primary" class="header">
+<mat-toolbar color="" class="header">
   <h2 class="logo">
     <img src="assets/img/logo_min.png" alt="IdStore" class="logo">
   </h2>
-  <span class="logo">ID Store</span>
-  <div class="menu">
-    <button mat-button>Inicio</button>
-    <button mat-button [matMenuTriggerFor]="productsMenu">Productos</button>
+  <!-- <span class="logo">ID Store</span> -->
+  <div class="menu matcolorprimary">
+    <button mat-button>INICIO</button>
+    <button mat-button [matMenuTriggerFor]="productsMenu">PRODUCTOS</button>
     <mat-menu #productsMenu="matMenu" yPosition="below">
       <button mat-menu-item>Mascarillas</button>
       <button mat-menu-item>Protectores Faciales</button>
       <button mat-menu-item>Oxímetros</button>
       <button mat-menu-item>Termómetros</button>
     </mat-menu>
-    <button mat-button>Nosotros</button>
-    <button mat-button [matMenuTriggerFor]="contactMenu">Contacto</button>
+    <button mat-button>NOSOTROS</button>
+    <button mat-button [matMenuTriggerFor]="contactMenu">CONTACTO</button>
     <mat-menu #contactMenu="matMenu" yPosition="below">
       <button mat-menu-item>Cliente</button>
       <button mat-menu-item (click)="login()">Administrador</button>
     </mat-menu>
+    <mat-icon class="material-icons primary">shopping_cart</mat-icon>
+    <mat-icon class="material-icons primary">search</mat-icon>
   </div>
   <div *ngIf="isLogin">Fernando Valverde</div>
 </mat-toolbar>
+<div class="divi"></div>
 <!-- <p>header works!!!!!!</p> -->

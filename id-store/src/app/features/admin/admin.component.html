@@ -1,0 +1,23 @@
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="side" opened class="mat-elevation-z4">
+    <app-menu [menuOptions]="menuOptions"></app-menu>
+  </mat-drawer>
+
+  <mat-drawer-content >
+    <mat-toolbar color="primary" class="mat-elevation-z8">
+      <mat-toolbar-row>
+        <div>
+          <button mat-icon-button (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <span>Administrador</span>
+        </div>
+        <button mat-button routerLink="/">Cerrar Sesión</button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <div class="page-container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
