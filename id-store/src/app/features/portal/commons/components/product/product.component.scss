@@ -1,3 +1,17 @@
 .actions {
   text-align: center;
 }
+
+span {
+  color: #00AAFF;
+}
+
+.button-cart {
+  background-color: #00AAFF;
+  color: white;
+  font-weight: bold;
+
+  .operation {
+    font-size: large;
+  }
+}

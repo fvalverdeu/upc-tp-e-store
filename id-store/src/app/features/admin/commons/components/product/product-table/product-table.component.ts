@@ -11,7 +11,7 @@ import { Product } from 'src/app/shared/models/product.model';
 export class ProductTableComponent implements OnChanges {
 
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
-  displayedColumns: string[] = ['Código', 'Nombre', 'Descripción', 'Precio', 'Stock', 'Fabricante'];
+  displayedColumns: string[] = ['code', 'name', 'description', 'price', 'stock', 'maker', 'actions'];
   dataSource: MatTableDataSource<Product[]> = new MatTableDataSource([]);
 
   @Input() products: Product[] = [];
