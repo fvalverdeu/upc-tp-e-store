@@ -1,11 +1,14 @@
+import { IMaker } from './maker.interface';
+
 export interface IProduct {
   id: number;
-  name: string;
-  code: string;
-  description: string;
-  price: number;
-  quantity: string;
-  idMaker: number;
+  nombre: string;
+  codigo: string;
+  descripcion: string;
+  precio: number;
+  cantidad: string;
+  idFabricante: number;
+  fabricante: IMaker;
   urlImg: string;
   state: boolean;
   dateCreate: string;

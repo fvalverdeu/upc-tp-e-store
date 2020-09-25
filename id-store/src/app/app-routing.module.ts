@@ -13,7 +13,8 @@ const routes: Routes = [
   {
     path: 'admin',
     loadChildren: () => import('./features/admin/admin.module').then(m => m.AdminModule)
-  }
+  },
+  // { path: 'converter', loadChildren: () => import('./shared/http/converter/converter.module').then(m => m.ConverterModule) }
 ];
 
 @NgModule({

@@ -1,32 +1,32 @@
 <mat-table [dataSource]="dataSource">
   <ng-container matColumnDef="code">
     <mat-header-cell *matHeaderCellDef>Código</mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{ element.code }} </mat-cell>
+    <mat-cell *matCellDef="let element"> {{ element.codigo }} </mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="name">
     <mat-header-cell *matHeaderCellDef>Nombre</mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{ element.name }} </mat-cell>
+    <mat-cell *matCellDef="let element"> {{ element.nombre }} </mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="description">
     <mat-header-cell *matHeaderCellDef>Descripción</mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{ element.description }} </mat-cell>
+    <mat-cell *matCellDef="let element"> {{ element.descripcion }} </mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="price">
     <mat-header-cell *matHeaderCellDef>Precio</mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{ element.price }} </mat-cell>
+    <mat-cell *matCellDef="let element"> {{ element.precio }} </mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="stock">
     <mat-header-cell *matHeaderCellDef>Stock</mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{ element.stock }} </mat-cell>
+    <mat-cell *matCellDef="let element"> {{ element.cantidad }} </mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="maker">
     <mat-header-cell *matHeaderCellDef>Fabricante</mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{ element.maker }} </mat-cell>
+    <mat-cell *matCellDef="let element"> {{ element.idFabricante }} </mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="actions">

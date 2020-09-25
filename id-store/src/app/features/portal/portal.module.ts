@@ -9,7 +9,9 @@ import { SharedModule } from '../../shared/shared.module';
 import { CommonsModule } from './commons/commons.module';
 import { SearchView } from './views/search/search.view';
 import { DetailView } from './views/detail/detail.view';
-
+import { HeaderModule } from '../../shared/components/header/header.module';
+import { InputFileModule } from '../../shared/components/input-file/input-file.module';
+import { ImgPreviewModule } from '../../shared/components/img-preview/img-preview.module';
 
 @NgModule({
   declarations: [PortalComponent, HomeView, SearchView, DetailView],
@@ -17,7 +19,8 @@ import { DetailView } from './views/detail/detail.view';
     CommonModule,
     PortalRoutingModule,
     SharedModule,
-    CommonsModule
+    CommonsModule,
+    HeaderModule
   ]
 })
 export class PortalModule { }

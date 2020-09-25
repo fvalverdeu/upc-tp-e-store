@@ -7,6 +7,8 @@ import { ProductUpdateImgComponent } from './product/product-update-img/product-
 import { MenuComponent } from './menu/menu.component';
 import { MaterialModule } from '../material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ImgPreviewModule } from 'src/app/shared/components/img-preview/img-preview.module';
+import { InputFileModule } from 'src/app/shared/components/input-file/input-file.module';
 
 const COMPONENTS = [
   ProductFilterComponent,
@@ -22,7 +24,9 @@ const COMPONENTS = [
   imports: [
     MaterialModule,
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ImgPreviewModule,
+    InputFileModule
   ]
 })
 export class ComponentsModule { }

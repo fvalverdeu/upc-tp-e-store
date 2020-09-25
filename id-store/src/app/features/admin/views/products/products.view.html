@@ -1,1 +1,12 @@
-<p>products works!</p>
+<div class="title-container">
+  <button mat-icon-button routerLink="create">
+    <mat-icon>add</mat-icon>
+  </button>
+  <h1>Productos</h1>
+</div>
+
+<app-product-table
+  [products]="presenter.products"
+  (edit)="presenter.goEditPage($event)"
+  (remove)="presenter.remove($event)">
+</app-product-table>

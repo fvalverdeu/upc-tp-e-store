@@ -1,21 +1,26 @@
 <mat-card class="example-card">
   <mat-card-header class="actions">
     <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Mascarilla personalizada</mat-card-title>
-    <mat-card-subtitle>Tema deportivo</mat-card-subtitle>
+    <!-- <mat-card-title>Mascarilla personalizada</mat-card-title> -->
+    <mat-card-title> {{ product.nombre }} </mat-card-title>
+    <!-- <mat-card-subtitle>Tema deportivo</mat-card-subtitle> -->
+    <mat-card-subtitle> {{ product.fabricante.nombre }} </mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="assets/img/mascarillas/mascarilla-10.png" alt="Photo of a Shiba Inu">
+  <img (click)="detail()" mat-card-image src="assets/img/mascarillas/mascarilla-10.png" alt="Photo of a Shiba Inu">
   <mat-card-content class="actions">
-    <p>
-      Material de calidad que brinda protección y tiene una larga duración. Producto 100% peruano.
-    </p>
-    <span>Precio: S/. 15.00</span>
+    <!-- <p>Material de calidad que brinda protección y tiene una larga duración. Producto 100% peruano.</p> -->
+    <p> {{ description }} </p>
+    <br>
+    <span (click)="detail()">Ver más</span>
+    <br>
+    <!-- <span>Precio: S/. 15.00</span> -->
+    <span>Precio: S/. {{ product.precio }} </span>
   </mat-card-content>
   <mat-card-actions>
     <div class="actions">
       <mat-button-toggle-group name="fontStyle" class="button-cart" aria-label="Font Style">
         <mat-button-toggle value="bold" class="button-cart">+</mat-button-toggle>
-        <mat-button-toggle value="italic " class="button-cart">Agregar al Carrito</mat-button-toggle>
+        <mat-button-toggle value="italic " class="button-cart" (click)="save()">Agregar al Carrito</mat-button-toggle>
         <mat-button-toggle value="underline" class="button-cart operation">-</mat-button-toggle>
       </mat-button-toggle-group>
     </div>

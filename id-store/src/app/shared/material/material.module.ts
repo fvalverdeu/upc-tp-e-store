@@ -6,6 +6,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  exports: [ MatToolbarModule, MatMenuModule, MatButtonModule, MatIconModule ]
+  exports: [ MatToolbarModule, MatMenuModule, MatButtonModule, MatIconModule, MatButtonModule ]
 })
 export class ShMaterialModule { }

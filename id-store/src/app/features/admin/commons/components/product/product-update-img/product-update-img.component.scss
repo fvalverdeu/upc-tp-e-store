@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  glx-img-preview {
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+  }
+
+  .btn-upload {
+    margin-top: 10px;
+    mat-icon {
+      margin-right: 10px;
+    }
+  }
+}

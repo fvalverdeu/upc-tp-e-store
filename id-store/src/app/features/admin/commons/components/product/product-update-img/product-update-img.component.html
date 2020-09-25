@@ -1,1 +1,18 @@
-<p>product-update-img works!</p>
+<app-img-preview [src]="imgProduct | defaultImg" [file]="fileControl.value" ></app-img-preview>
+
+<div>
+  <app-input-file [formControl]="fileControl" accept="image/*"></app-input-file>
+
+  <span class="mat-error" *ngIf="fileControl.hasError('extension') && fileControl.touched">
+    {{ fileControl.getError('extension') }}
+  </span>
+
+  <button class="btn-upload"
+          mat-raised-button color="primary"
+          [disabled]="fileControl.invalid"
+          (click)="send()">
+    <mat-icon>cloud</mat-icon>
+    <span>Subir Imagen</span>
+  </button>
+</div>
+

@@ -1,8 +1,8 @@
 export interface IMaker {
   id: number;
-  name: string;
+  nombre: string;
   ruc: string;
-  state: boolean;
-  dateCreate: string;
-  dateUpdate: string;
+  estado: boolean;
+  fechaRegistro: string;
+  fechaModificacion: string;
 }

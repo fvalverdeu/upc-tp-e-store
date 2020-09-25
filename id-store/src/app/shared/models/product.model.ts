@@ -1,4 +1,5 @@
 import { IProduct } from '../interfaces/product.interface';
+import { Maker } from './maker.model';
 
 export class Product {
   id: number;
@@ -8,6 +9,7 @@ export class Product {
   price: number;
   quantity: string;
   idMaker: number;
+  fabricante: Maker;
   urlImg: string;
   state: boolean;
   dateCreate: string;
@@ -15,12 +17,13 @@ export class Product {
 
   constructor(data?: IProduct) {
     this.id = data ? data.id : 0;
-    this.name = data ? data.name : '';
-    this.code = data ? data.code : '';
-    this.description = data ? data.description : '';
-    this.price = data ? data.price : 0;
-    this.quantity = data ? data.quantity : '';
-    this.idMaker = data ? data.idMaker : 0;
+    this.name = data ? data.nombre : '';
+    this.code = data ? data.codigo : '';
+    this.description = data ? data.descripcion : '';
+    this.price = data ? data.precio : 0;
+    this.quantity = data ? data.cantidad : '';
+    this.idMaker = data ? data.idFabricante : 0;
+    this.fabricante = data ? new Maker(data.fabricante) : new Maker();
     this.urlImg = data ? data.urlImg : '';
     this.state = data ? data.state : true;
     this.dateCreate = data ? data.dateCreate : '';

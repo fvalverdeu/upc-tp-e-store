@@ -1,6 +1,9 @@
 <app-header></app-header>
 <div class="container">
-  <div class="card">
+  <div class="card" *ngFor="let item of presenter.products">
+    <app-product [product]="item"></app-product>
+  </div>
+  <!-- <div class="card">
     <app-product></app-product>
   </div>
   <div class="card">
@@ -23,10 +26,7 @@
   </div>
   <div class="card">
     <app-product></app-product>
-  </div>
-  <div class="card">
-    <app-product></app-product>
-  </div>
+  </div> -->
 </div>
 <!--<div class="home">
   <img src="assets/img/mascarillas/mascarilla-01.jpg" alt="">

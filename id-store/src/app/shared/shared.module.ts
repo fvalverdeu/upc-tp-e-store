@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { ShComponentsModule } from './components/components.module';
-
-
+import { DefaultImgPipe } from './pipes/default-img.pipe';
 
 @NgModule({
   imports: [ ShComponentsModule ],
-  exports: [ ShComponentsModule ]
+  exports: [ ShComponentsModule ],
+  declarations: [DefaultImgPipe]
 })
 export class SharedModule { }

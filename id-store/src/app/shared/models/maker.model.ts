@@ -10,10 +10,10 @@ export class Maker {
 
   constructor(data?: IMaker) {
     this.id = data ? data.id : 0;
-    this.name = data ? data.name : '';
+    this.name = data ? data.nombre : '';
     this.ruc = data ? data.ruc : '';
-    this.state = data ? data.state : true;
-    this.dateCreate = data ? data.dateCreate : '';
-    this.dateUpdate = data ? data.dateUpdate : '';
+    this.state = data ? data.estado : true;
+    this.dateCreate = data ? data.fechaRegistro : '';
+    this.dateUpdate = data ? data.fechaModificacion : '';
   }
 }

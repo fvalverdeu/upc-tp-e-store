@@ -8,6 +8,9 @@ import { ProductUpdateView } from './views/product-update/product-update.view';
 import { ProductsView } from './views/products/products.view';
 import { AdminComponent } from './admin.component';
 import { AdminCommonsModule } from './commons/commons.module';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { LoadingModule } from '../../shared/components/loading/loading.module';
+import { ProductsHttpModule } from 'src/app/shared/http/products/products.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { AdminCommonsModule } from './commons/commons.module';
   imports: [
     CommonModule,
     AdminRoutingModule,
-    AdminCommonsModule
+    AdminCommonsModule,
+    SharedModule,
+    LoadingModule,
+    ProductsHttpModule
   ]
 })
 export class AdminModule { }
